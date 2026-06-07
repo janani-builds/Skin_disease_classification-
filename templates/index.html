@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DermAI</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>✨ DermAI</h1>
+
+    <p>
+        Intelligent AI-powered skin disease detection
+    </p>
+
+    <form action="/predict" method="POST" enctype="multipart/form-data">
+
+        <div class="upload-box">
+
+            <div class="icon">
+                📸
+            </div>
+
+            <h2>Upload Skin Image</h2>
+
+            <input type="file" name="file" required>
+
+        </div>
+
+        <button type="submit">
+            🚀 Analyze Image
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
